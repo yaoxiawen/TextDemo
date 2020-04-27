@@ -4,26 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
     android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
     >
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="文字中间变换颜色"
         android:textColor="#000000"
         android:textSize="15sp"
-        android:text="文字中间变换颜色"/>
-
+        />
     <TextView
         android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="文字中间变换大小"
         android:textColor="#000000"
         android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="文字中间变换大小"/>
+        android:text="自适应测试自适应测试"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="自适应测试自适应测试"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        />
 
+    <com.autofit.AutofitTextView
+        android:id="@+id/tv5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:text="AutofitTextView自适应测试"
+        android:textSize="15sp"
+        />
 </LinearLayout>
